@@ -2,22 +2,38 @@ h1{
 font-family: 'Merriweather', serif;	
 
 }
-.logo {
-	color: yellow;
-	margin-left: 15px;
-	padding-top: 15px;
-	font-size: 28px;
+
+.row {
+	min-height: 100px;
+	box-sizing: border-box;
+	color: white;
+	justify-content: space-between;
 }
+
+.dark {
+	background-color: black;
+}
+
 .nav {
 	list-style: none;
 
 }
 
+.logo {
+	color: yellow;
+	margin-left: 10px;
+	font-size: 28px;
+	text-align: left;
+}
+
+
 .nav li{
 	display: inline;
-	padding: 10px;
+	margin: 10px;
 	font-family: 'Merriweather', serif;
 }
+
+
 
 .biggernav{
 	text-transform: uppercase;
@@ -25,31 +41,10 @@ font-family: 'Merriweather', serif;
 	font-weight: bolder;
 }
 
-.nav li biggernav left{
-	margin-right: 150px;
-	margin-bottom: 5px;
-}
-
-.dark {
-	background-color: black;
-}
-
-.row {
-	min-height: 100px;
-	box-sizing: border-box;
-	color: white;
-}
-
-footer{
-		font-family: 'Merriweather', serif;
-		font-weight: bolder;
-		font-size: 20px;
-		margin-left: 10px;
-		margin-top: 10px;	
-}
 .row-flex {
 	display: flex;
 }
+
 .eyebrow {
 	background-color: #ccc;
 	color: black;
@@ -57,13 +52,14 @@ footer{
 	font-family: 'Merriweather', serif;
 	text-align: center;
 	font-size: 25px;
+	display: flex;
+	justify-content: center;
 }
 
 .background-image {
 	background-image: url("../images/coworking.jpg");
     background-color: white;
     background-repeat: no-repeat;
-    min-height: 400px;
     background-size: cover;
     overflow: hidden;
     background-position: center;
@@ -80,9 +76,12 @@ footer{
 .transbox p {
   margin-left: 10%;
   margin-right: 10%;
-  font-weight: bold;
   color: #000000;
+  font-size: 20px;
+  line-height: 1.5;
+
 }
+
 .transbox h1 {
   margin-left: 10%;
   font-weight: bold;
@@ -92,6 +91,7 @@ footer{
 .ins{
 	text-decoration: underline;
 	text-decoration-color: yellow;
+
 }
 
 .row-tall {
@@ -100,21 +100,52 @@ footer{
 
 .col {
 	box-sizing: border-box;
-	margin-right: 20px;
 	background-color: transparent;
 	color: black;
 	font-family: 'Source Sans Pro', sans-serif;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-top: none;
+	border-bottom: none;
+	margin: 2px;
 }
-
 
 .col-half {
 	width: 50%;
 }
 
 .col-third {
-	width: 33.33333%;
+	width: 20%;
 }
 
+.col-third {
+	width: 20%;
+}
+
+.col-third-small {
+	width-left: 10%;
+	width-right: 10%;
+	border-left: none;
+	border-right: none;
+}
+
+.col-third:first-child {
+	border-left: none;
+	border-right: none;
+}
+.col-third:last-child {
+	border-left: none;
+	border-right: none;	
+}
+
+.col-third-small:first-child {
+	border-left: none;
+	border-right: none;
+}
+.col-third-small:last-child {
+	border-left: none;
+	border-right: none;
+}
 .button {
 	font-family: 'Oswald', sans-serif;
     background-color: #ccc;
@@ -144,13 +175,24 @@ footer{
 .yellow-transparent{
 	background-color: yellow;
 }
-}
+
 .col:last-child { /* psuedoclass */
 	margin-right: 0;
 }
 p {
-		font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
+
+footer{
+		font-family: 'Merriweather', serif;
+		font-weight: bolder;
+		font-size: 20px;
+		display: flex;
+		padding-left: 250px;
+		justify-content: space-between;
+
+}
+
 @media all and (max-width: 550px){
 	.row-flex{
 	display: block;
