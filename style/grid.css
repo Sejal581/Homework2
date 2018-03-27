@@ -115,19 +115,17 @@ font-family: 'Merriweather', serif;
 	border: 1px solid #ccc;
 	border-top: none;
 	border-bottom: none;
+	border-left: none;
 }
 .col-third-small {
 	width-left: 10%;
 	width-right: 10%;
-}
-
-.col-third:first-child {
-	border-left: none;
 	border-right: none;
 }
+
 .col-third:last-child {
-	border-left: none;
 	border-right: none;	
+
 }
 
 .button {
