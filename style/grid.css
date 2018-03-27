@@ -7,7 +7,6 @@ font-family: 'Merriweather', serif;
 	min-height: 100px;
 	box-sizing: border-box;
 	color: white;
-	justify-content: space-between;
 }
 
 .dark {
@@ -16,14 +15,14 @@ font-family: 'Merriweather', serif;
 
 .nav {
 	list-style: none;
-
 }
 
 .logo {
 	color: yellow;
 	margin-left: 10px;
+	margin-top: auto;
+	padding-top: 10px;
 	font-size: 28px;
-	text-align: left;
 }
 
 
@@ -32,7 +31,6 @@ font-family: 'Merriweather', serif;
 	margin: 10px;
 	font-family: 'Merriweather', serif;
 }
-
 
 
 .biggernav{
@@ -46,14 +44,24 @@ font-family: 'Merriweather', serif;
 }
 
 .eyebrow {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
 	background-color: #ccc;
 	color: black;
 	border-top: 5px solid yellow;
-	font-family: 'Merriweather', serif;
 	text-align: center;
 	font-size: 25px;
 	display: flex;
 	justify-content: center;
+	font-weight: bold;
+}
+
+.eyebrow del{
+	color: gray;
+}
+.eyebrow ins{
+	text-decoration: underline;
+	text-decoration-color: yellow;
 }
 
 .background-image {
@@ -68,7 +76,6 @@ font-family: 'Merriweather', serif;
 .transbox {
   margin: 25px 120px 25px 875px;
   background-color: #ffffff;
-  border: 1px solid black;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -88,11 +95,7 @@ font-family: 'Merriweather', serif;
   color: #000000;
   margin-top: 10%;
 }
-.ins{
-	text-decoration: underline;
-	text-decoration-color: yellow;
 
-}
 
 .row-tall {
 	min-height: 200px;	
@@ -103,30 +106,19 @@ font-family: 'Merriweather', serif;
 	background-color: transparent;
 	color: black;
 	font-family: 'Source Sans Pro', sans-serif;
-	border: 1px solid #ccc;
 	padding: 20px;
-	border-top: none;
-	border-bottom: none;
 	margin: 2px;
 }
 
-.col-half {
-	width: 50%;
-}
-
 .col-third {
 	width: 20%;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
 }
-
-.col-third {
-	width: 20%;
-}
-
 .col-third-small {
 	width-left: 10%;
 	width-right: 10%;
-	border-left: none;
-	border-right: none;
 }
 
 .col-third:first-child {
@@ -138,14 +130,6 @@ font-family: 'Merriweather', serif;
 	border-right: none;	
 }
 
-.col-third-small:first-child {
-	border-left: none;
-	border-right: none;
-}
-.col-third-small:last-child {
-	border-left: none;
-	border-right: none;
-}
 .button {
 	font-family: 'Oswald', sans-serif;
     background-color: #ccc;
@@ -190,7 +174,6 @@ footer{
 		display: flex;
 		padding-left: 250px;
 		justify-content: space-between;
-
 }
 
 @media all and (max-width: 550px){
